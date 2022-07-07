@@ -1,0 +1,129 @@
+@media(max-width: 1700px){
+    .main__content-collect{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    .main__content-cell{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main__ps-part{
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+
+    .main__ps-img{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-right: 500px;
+    }
+
+    .header__list-tech{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main__ps-part{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 400px;
+        
+    }
+
+    .main__ps-left{
+        position: relative;
+       
+        
+    }
+    
+    .main__ps-img{
+        position: absolute  ;
+        margin-top: 350px;
+        z-index: -1000;
+    }
+
+   /* .main__content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header__content-buttons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .header__content-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }*/
+    
+    /*.header__poster-link2 /*header__poster-list*//*
+    {
+        
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 10px;
+        gap: 5px;
+    }
+
+    .header__poster-span{
+        margin-left: 0;
+        margin-right: 22px;
+    }*/
+}
+
+@media(max-width: 800px){
+    .main__ps-photo{
+        min-width: 630px;
+        width: 100%;
+
+    }
+
+    .main__ps-img{
+        margin-right: 250px;
+    }
+}
+
+@media(max-width: 700px){
+    .main__content-ap{
+        display: flex;
+        justify-content: center;
+    }
+    .img2{
+        min-width: 300px;
+        width: 100%;
+    }
+
+    .img1{
+        min-width: 400px;
+    }
+}
+
+@media(max-width: 600px){
+    .main__content-images{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main__content-photo{
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    
+    
+}
