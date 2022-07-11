@@ -59,7 +59,7 @@
     justify-content: space-around;
 }
 
-.header__content-title{
+.header__content{
     font-family: var(--NS_semiBold);
     font-size: 35px;
     line-height: 60px;
@@ -86,6 +86,10 @@
     width: 15px;
 }
 
+.carousel-indicators{
+    position: relative !important ;
+}
+
 .dropdown__item-collect{
     letter-spacing: 0.05em;
     color: #313131;
@@ -109,8 +113,8 @@
 }
 
 .header__navbar-btn-phone, .header__navbar-btn-phone:hover{
-    background: none;
-    border: none;
+    background: white;
+    border: white;
     letter-spacing: 0.05em;
     font-size: 18px;
     line-height: 70px;
@@ -124,6 +128,9 @@
     color: #313131;
 }
 
+.carousel-indicators{
+    margin-top: 30px;
+}
 
 
 
@@ -194,17 +201,11 @@
 }
 
 
-.main__list-items{
-    max-width: 300px;
-    width: 100%;
-}
-
-
-
 .img4, .img3{
    max-height: 235px;
    height: 100%;
 }
+
 
 .main__content-collect{
     gap: 30px;
@@ -218,27 +219,34 @@
 /*ul list*/
 
 .main__list-items{
+    max-width: 300px;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     text-align: center;
     box-sizing: border-box;
-    vertical-align: middle; 
-
+    vertical-align: middle;
+    margin-top: 30px;
+    color: #0C0C0C;   
+    position: relative;
+    z-index: 10;
 }
 
-.main__content-link{
+
+.main__content-link, .main__content-link:hover{
     max-width: 190px;
     width: 100%;
     display: flex;
     justify-content: center;
-
+    color: var(--light_mode);
 }
 
 .main__ps-part{
     margin-top: 90px;
-    
+    margin-bottom: 70px;
+    display: flex;
 }
 
 .main__topseller{
@@ -267,11 +275,7 @@
 
 
 .main__ps-left{
-    position: absolute;
-}
-
-.main__ps-img{
-    position: relative;
+    display: block;
 }
 
 
@@ -406,7 +410,7 @@
 }
 
 .form-control{
-    min-width: 400px;
+    max-width: 400px;
     padding-right: 180px;
    
 }
@@ -454,9 +458,10 @@
 /*FOOTER END*/
 
 /*howers*/
-.main__list-items{
-    color: #0C0C0C;
-}
+
+
+
+
 
 .main__list-items:hover{
     color: #0C0C0C;
@@ -466,15 +471,63 @@
 
 .main__list-items:hover::before{
     display: block;
-    
-    color: #0C0C0C;
+    color: #0C0C0C ;
     position: absolute;
     content: '\f004';
     font-size: 18px;
     top: 15px;
     right: 8px;
+    z-index: 10000;
 }
 
+
+
+
+.main__content-buy, .main__content-buy:hover{
+   
+    background: #313131;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding: 12px 46px;
+    z-index: -10000 !important;
+    position: absolute;
+    overflow: hidden !important;
+    margin-bottom:  120px;
+}
+
+
+
+.main__list-items:hover .main__content-buy{
+   
+    bottom: 0;
+    margin-bottom: 10px !important;
+    
+}
+
+.main__list-price{
+   padding-bottom: 60px;
+}
+
+.main__list-img{
+    padding-bottom: -30px !important;
+    z-index: 100    ;
+}
+
+/*.main__content-small{
+    max-width: 339px;
+    width: 100%; 
+    position: relative; 
+    overflow: hidden; 
+}
+
+.main__content-small:hover>.main__content-icon{
+   top: 0;
+}
+*/
+
+/*header__content-link*/
 
 .navbar-brand{
     padding-top:30px ;
@@ -593,8 +646,7 @@
 .main__vr-left{
     display: flex;
     flex-direction: column;
-    max-width: 1290px;
-    width: 100%;
+
     position: relative;
     margin-left: 300px;
 }
@@ -640,3 +692,49 @@ transition: filter .7s ease-in-out;
   -webkit-filter: opacity(0%); 
   filter: opacity(100%); 
 }
+
+
+.btn-outline-success {
+    width: 100%;
+    text-align: center;
+    padding: 12px 60px;
+    border-top: .5px solid white ;
+    border-right: .5px solid white ;
+    border-bottom: .5px solid white ;
+}
+
+
+.btn-check:active+.btn, .btn-check:checked+.btn, .btn.active, .btn.show, .btn:active{
+    color: black;
+    /* background-color: var(--bs-btn-active-bg); */
+    border-color: white !important;
+    box-shadow: white !important;
+    background: white !important;
+}
+
+.nav-link:focus, .nav-link:hover{
+    color: var(--light_mode);
+}
+
+.number, .stick{
+    font-size: 30px;
+    line-height: 41px;
+    /* identical to box height */
+
+    text-align: center;
+    font-family: var(--NS_regular);
+    color: #ABABAB;
+
+}
+
+.number:hover, .stick:hover{
+    color: #000000;
+}
+
+.section__controlers{
+    min-width: 300px;
+    width: 100%;
+}
+
+/*index3*/
+
